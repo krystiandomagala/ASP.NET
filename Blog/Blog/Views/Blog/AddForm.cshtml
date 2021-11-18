@@ -9,16 +9,15 @@
     <h2>Dodaj wpis na bloga</h2>
     <form method="post" asp-action="Add" asp-controller="Blog">
         <div class="mb-3">
+            <span asp-validation-for="Title" class="text-danger"></span>
             <input class="form-control" asp-for="Title" />
         </div>
 
         <div class="mb-3">
+            <span asp-validation-for="Content" class="text-danger"></span>
             <textarea class="form-control" asp-for="Content"></textarea>
         </div>
 
-        <div class="mb-3">
-            <input class="form-control" asp-for="CreationTimestamp" />
-        </div>
 
         <div class="mb-3">
             <button class="btn btn-primary" type="submit">Zapisz</button>

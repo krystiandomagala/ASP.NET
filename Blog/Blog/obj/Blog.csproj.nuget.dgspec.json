@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Krystian\\source\\repos\\ASP.NET\\ASP.NET\\Blog\\Blog\\Blog.csproj": {}
+    "C:\\Users\\Krystian\\Desktop\\ASP.NET-main\\ASP.NET-main\\Blog\\Blog\\Blog.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Krystian\\source\\repos\\ASP.NET\\ASP.NET\\Blog\\Blog\\Blog.csproj": {
+    "C:\\Users\\Krystian\\Desktop\\ASP.NET-main\\ASP.NET-main\\Blog\\Blog\\Blog.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Krystian\\source\\repos\\ASP.NET\\ASP.NET\\Blog\\Blog\\Blog.csproj",
+        "projectUniqueName": "C:\\Users\\Krystian\\Desktop\\ASP.NET-main\\ASP.NET-main\\Blog\\Blog\\Blog.csproj",
         "projectName": "Blog",
-        "projectPath": "C:\\Users\\Krystian\\source\\repos\\ASP.NET\\ASP.NET\\Blog\\Blog\\Blog.csproj",
+        "projectPath": "C:\\Users\\Krystian\\Desktop\\ASP.NET-main\\ASP.NET-main\\Blog\\Blog\\Blog.csproj",
         "packagesPath": "C:\\Users\\Krystian\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Krystian\\source\\repos\\ASP.NET\\ASP.NET\\Blog\\Blog\\obj\\",
+        "outputPath": "C:\\Users\\Krystian\\Desktop\\ASP.NET-main\\ASP.NET-main\\Blog\\Blog\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Krystian\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -39,6 +39,22 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.11, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.11, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.11, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
