@@ -5797,19 +5797,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Krystian\\.nuget\\packages\\": {}
+    "C:\\Users\\kryst\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Krystian\\Desktop\\ASP.NET-main\\ASP.NET-main\\Blog\\Blog\\Blog.csproj",
+      "projectUniqueName": "C:\\Users\\kryst\\source\\repos\\ASP.NET\\Blog\\Blog\\Blog.csproj",
       "projectName": "Blog",
-      "projectPath": "C:\\Users\\Krystian\\Desktop\\ASP.NET-main\\ASP.NET-main\\Blog\\Blog\\Blog.csproj",
-      "packagesPath": "C:\\Users\\Krystian\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Krystian\\Desktop\\ASP.NET-main\\ASP.NET-main\\Blog\\Blog\\obj\\",
+      "projectPath": "C:\\Users\\kryst\\source\\repos\\ASP.NET\\Blog\\Blog\\Blog.csproj",
+      "packagesPath": "C:\\Users\\kryst\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\kryst\\source\\repos\\ASP.NET\\Blog\\Blog\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Krystian\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\kryst\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -5868,7 +5868,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
       }
     }
   }
