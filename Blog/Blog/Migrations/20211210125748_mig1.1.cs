@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace Blog.Migrations
 {
-    public partial class migracja2 : Migration
+    public partial class mig11 : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {

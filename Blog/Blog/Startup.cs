@@ -11,6 +11,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
+//services.AddTransient<ICustomerBlogItemRepository, CustomerBlogItemRepository>();
+//services.AddTransient<ICrudBlogItemRepository, CrudBlogItemRepository>();
+
 namespace Blog
 {
     public class Startup
