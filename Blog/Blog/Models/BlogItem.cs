@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -8,6 +9,17 @@ using System.Threading.Tasks;
 
 namespace Blog.Models
 {
+    public class AppIdentityDbContext : IdentityDbContext<IdentityUser>
+    {
+        public class AppIdentityDbContext : IdentityDbContext<IdentityUser>
+        {
+            public
+           AppIdentityDbContext(DbContextOptions<AppIdentityDbContext> options)
+            : base(options) { }
+        }
+
+    }
+
     public interface ICustomerBlogItemRepository
     {
         IList<BlogItem> FindByName(string namePattern);

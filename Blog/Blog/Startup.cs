@@ -2,6 +2,7 @@ using Blog.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -30,6 +31,12 @@ namespace Blog
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+
+            services.AddDbContext<AppIdentityDbContext>(options => options.UseSqlServer(Configuration["Data:AppIdentity:ConnectionString"]));
+            services.AddIdentity<IdentityUser, IdentityRole>()
+            .AddEntityFrameworkStores<AppIdentityDbContext>()
+            .AddDefaultTokenProviders();
+
             services.AddDbContext<ApplicationDbContext>(options => 
             options.UseSqlServer(Configuration["Data:BlogItems:ConnectionString"]));
             services.AddTransient<IBlogItemRepository, EFBlogItemRepository>();
@@ -53,9 +60,8 @@ namespace Blog
             }
             app.UseHttpsRedirection();
             app.UseStaticFiles();
-
             app.UseRouting();
-
+            app.UseSession();
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
