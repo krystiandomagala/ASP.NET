@@ -43,7 +43,9 @@ namespace Blog.Models
         BlogItem Delete(int id);
         BlogItem Add(BlogItem blogItem);
         BlogItem Update(BlogItem blogItem);
+        void Delete(object id);
         IList<BlogItem> FindAll();
+        BlogItem Save(BlogItem item);
     }
 
     class CrudBlogItemRepository : ICrudBlogItemRepository
@@ -83,6 +85,16 @@ namespace Blog.Models
         public IList<BlogItem> FindAll()
         {
             return _context.BlogItems.ToList();
+        }
+
+        public void Delete(object id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public BlogItem Save(BlogItem item)
+        {
+            throw new NotImplementedException();
         }
     }
     public class EFBlogItemRepository : IBlogItemRepository
